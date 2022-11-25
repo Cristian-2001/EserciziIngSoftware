@@ -48,5 +48,6 @@ public class Test {
 
         Manager manager = new Manager(allParkings);
         manager.printParking();
+        manager.printFreeParkings();
     }
 }

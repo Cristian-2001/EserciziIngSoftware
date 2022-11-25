@@ -1,5 +1,7 @@
 package Es6;
 
+import java.util.Iterator;
+
 public abstract class ParcheggioComponent {
     public void add(ParcheggioComponent parcheggioComponent) {
         throw new UnsupportedOperationException();
@@ -21,11 +23,19 @@ public abstract class ParcheggioComponent {
         throw new UnsupportedOperationException();
     }
 
-    public Integer getDim(){
+    public Integer getDim() {
         throw new UnsupportedOperationException();
     }
 
     public void print() {
+        throw new UnsupportedOperationException();
+    }
+
+    public boolean isFree() {
+        throw new UnsupportedOperationException();
+    }
+
+    public Iterator<ParcheggioComponent> createIterator() {
         throw new UnsupportedOperationException();
     }
 }

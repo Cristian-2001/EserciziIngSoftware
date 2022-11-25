@@ -1,5 +1,7 @@
 package Es6;
 
+import java.util.Iterator;
+
 public class ParcheggioItem extends ParcheggioComponent {
     int num;
     int dim;
@@ -30,5 +32,9 @@ public class ParcheggioItem extends ParcheggioComponent {
             System.out.print("(f)");
         }
         System.out.println(", " + getDim());
+    }
+
+    public Iterator<ParcheggioComponent> createIterator() {
+        return new NullIterator();
     }
 }
